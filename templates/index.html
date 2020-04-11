@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web App</title>
+</head>
+<body>
+<h1>Welcome....This response is working!</h1>
+<br></br>
+<h1>I am coming from HTML!</h1>
+<br/>
+<h1>{{key1}}</h1>
+<br/>
+<a href="{%url 'result'%}">CLICK HERE TO GO TO RESULT!</a>
+<br></br>
+<form action="{%url 'result'%}">
+
+    {% csrf_token %}
+    <textarea cols="60" rows="10" name="article"></textarea>
+    <br></br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+</body>
+</html>
