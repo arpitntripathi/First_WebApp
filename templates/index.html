@@ -6,19 +6,21 @@
 </head>
 <body>
 <h1>Welcome....This response is working!</h1>
-<br></br>
+<br>
 <h1>I am coming from HTML!</h1>
 <h1>I made changes to upload in git</h1>
 <br/>
 <h1>{{key1}}</h1>
 <br/>
 <a href="{%url 'result'%}">CLICK HERE TO GO TO RESULT!</a>
-<br></br>
+<br>
 <form action="{%url 'result'%}">
 
     {% csrf_token %}
-    <textarea cols="60" rows="10" name="article"></textarea>
-    <br></br>
+    <label>
+        <textarea cols="60" rows="10" name="article"></textarea>
+    </label>
+    <br>
     <input type="submit" value="Submit">
 </form>
 

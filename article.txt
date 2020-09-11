@@ -1,0 +1,9 @@
+Unfortunately Translation is treated differently (addition) from scaling & rotation (multiplication) we would like to be able to treat all three transformations in a consistent way, So that they can be combined easily. So, that the final coordinate position are obtained directly from initial coordinates without calculating intermediate coordinate value.
+We can do this by Reformulating P' = M1* P + M2  to eliminate the matrix addition operation.
+If we expand the representation from 2*2 into 3*3 matrix , so all Transformation Eq. can be expressed as matrix multiplication. 
+To express any two-dimensional transformation as a matrix multiplication, we represent each Cartesian coordinate position (x,y) with the Homogeneous coordinate triple (xh,yh, h)
+If these points are expressed in Homogeneous Coordinates, all three transformations can be treated as multiplication.
+In Homogeneous Coordinate we add a third coordinate to a point instead of being represented by a pair of number (x,y) each point is represented by a triple (xh,yh,h).
+At the same time we say that two sets of Homogeneous coordinates (xh,yh,h) & (x’h,y’h,h’) represent the same point if and only if one is a multiple of other thus (2,3,6) & (4,6,12) are the same points represented by different coordinate triples
+That is each point has many different homogeneous coordinates represents also, at least one of the Homogeneous coordinates must be non zero: (0,0,0) is not allowed.
+If the h coordinate is nonzero, we can divide through by it (x,y,h) represent the same point as (x⁄h, y⁄h,1) where h≠0
