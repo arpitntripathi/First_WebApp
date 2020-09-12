@@ -14,7 +14,7 @@
 <br/>
 <a href="{%url 'result'%}">CLICK HERE TO GO TO RESULT!</a>
 <br>
-<form action="{%url 'result'%}">
+<form action="{% url 'result' %}">
 
     {% csrf_token %}
     <label>

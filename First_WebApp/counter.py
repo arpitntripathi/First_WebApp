@@ -1,5 +1,6 @@
 import operator
 
+
 def count(article):
     words = article.split()
     word_count = len(words)
@@ -10,4 +11,4 @@ def count(article):
         else:
             dict_words[word] = 1
     var_dict = sorted(dict_words.items(), key=operator.itemgetter(1), reverse=True)
-    return var_dict,word_count
+    return var_dict, word_count
